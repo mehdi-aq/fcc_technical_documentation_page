@@ -1,0 +1,116 @@
+:root {
+    --main-color: hsl(226, 34%, 30%);
+    --main-color-hover: hsl(226, 34%, 20%);
+    --second-color: #d45a66;
+    --navbar-width: 300px;
+}
+body {
+    margin: 0;
+}
+#navbar {
+    background-color: var(--main-color);
+    color: white;
+    position: fixed;
+    height: 100%;
+    width: var(--navbar-width);
+}
+#navbar > header {
+    color: var(--second-color);
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 15px;
+}
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+.menu {
+    margin-top: 50px;
+    list-style-type: '+';
+}
+.menu > li {
+    margin-bottom: 33px;
+}
+.menu > li:hover {
+    background-color: var(--main-color-hover);
+}
+#main-doc {
+    background-color: #fcfcfc;
+    color: #5e6463;
+    margin-left: var(--navbar-width);
+    padding-left: 15px;
+    padding-right: 50px;
+}
+.main-section {
+    margin-bottom: 70px;
+}
+.main-section > header {
+    font-size: 3em;
+    color: black;
+    font-weight: bold;
+}
+code {
+    color: black;
+}
+.note {
+    background-color: #6ab0de;
+    padding: 13px;
+    padding-top: 1px;
+    color: black;
+}
+.note > h5 {
+    color: white;
+    background-color: #3c7193 ;
+    font-size: 1.3em;
+}
+.warning {
+    background-color: #ffedcc;
+    padding: 13px;
+    padding-top: 1px;
+    color: black;
+}
+.warning > h5 {
+    color: white;
+    background-color: #f0b37e;
+    font-size: 1.3em;
+}
+.syntax_comment {
+    color: #57909b;
+    font-style: italic;
+}
+.syntax_keywoard {
+    font-weight: bold;
+    color: green;
+}
+.syntax_number {
+    color: #e59523;
+}
+.syntax_string {
+    color: red;
+}
+.menu-phone {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    background-color: var(--main-color-hover);
+    text-align: center;
+    color: var(--second-color);
+    text-decoration: none;
+    font-weight: bold;
+    display: none;
+}
+@media screen and (max-width: 800px) {
+    #navbar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    #main-doc {
+        margin-left: 12px;
+    }
+    .menu-phone {
+        display: block;
+    }
+}
